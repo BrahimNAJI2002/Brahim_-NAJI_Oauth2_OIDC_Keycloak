@@ -8,7 +8,7 @@ import {KeycloakProfile} from "keycloak-js/lib/keycloak";
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit{
-  title = 'ecom-app-angular';
+  title = 'front-end-app';
   public profile! : KeycloakProfile;
   constructor(public keycloakService : KeycloakService) {
   }

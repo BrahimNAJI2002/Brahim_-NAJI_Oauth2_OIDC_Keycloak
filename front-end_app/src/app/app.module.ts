@@ -14,8 +14,8 @@ function initializeKeycloak(keycloak: KeycloakService) {
     keycloak.init({
       config: {
         url: 'http://localhost:8080',
-        realm: 'bdcc-realm',
-        clientId: 'ecom-client-ang'
+        realm: 'brahim-realm',
+        clientId: 'brahim_client'
       },
       initOptions: {
         onLoad: 'check-sso',
