@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {KeycloakService} from "keycloak-angular";
 import {KeycloakProfile} from "keycloak-js/lib/keycloak";
 
@@ -7,9 +7,8 @@ import {KeycloakProfile} from "keycloak-js/lib/keycloak";
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-  title = 'front-end_app';
-
+export class AppComponent implements OnInit{
+  title = 'ecom-app-angular';
   public profile! : KeycloakProfile;
   constructor(public keycloakService : KeycloakService) {
   }

@@ -3,8 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {KeycloakAngularModule, KeycloakService} from "keycloak-angular";
+import { ProductsComponent } from './ui/product/product.component';
 import {HttpClientModule} from "@angular/common/http";
+import {KeycloakAngularModule, KeycloakService} from "keycloak-angular";
+import { OrdersComponent } from './ui/order/order.component';
+import { OrderDetailsComponent } from './ui/order-details/order-details.component';
 
 function initializeKeycloak(keycloak: KeycloakService) {
   return () =>
@@ -23,7 +26,10 @@ function initializeKeycloak(keycloak: KeycloakService) {
 }
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProductsComponent,
+    OrdersComponent,
+    OrderDetailsComponent
   ],
   imports: [
     BrowserModule,
